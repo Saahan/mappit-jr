@@ -10,6 +10,8 @@ import BootstrapModal from "./BootstrapModal";
 export default function MarkerSearch() {
   const [show, setShow] = useState(false);
   const [modalData, setModalData] = useState("");
+  const [queryArray, setQueryArray] = useState(markerDetails);
+  let filter = [];
 
   const handleShow = () => {
     setShow(true);
@@ -18,11 +20,24 @@ export default function MarkerSearch() {
     setShow(false);
   };
 
+  function passQuery(e) {
+    console.log(e);
+
+    filter = markerDetails.filter((item) => {
+      return (
+        item.name.toLowerCase().includes(e.toLowerCase()) ||
+        item.category.toLowerCase().includes(e.toLowerCase())
+      );
+    });
+    setQueryArray(filter);
+    //console.log(filter);
+  }
+
   return (
     <div>
-      <SearchMenu />
+      <SearchMenu passQuery={passQuery} />
 
-      {markerDetails.map((item) => (
+      {queryArray.map((item) => (
         <Marker
           position={[item.position[0], item.position[1]]}
           key={item.id}
