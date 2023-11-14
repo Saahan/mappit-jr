@@ -18,11 +18,12 @@ export default function BootstrapModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className="modal-body">
+      <div style={{textAlign:"center"}}>
         <img
           src={props.modalData.image1}
           alt="error"
           className="modal-image"
-        ></img>
+        ></img></div>
         <Row>{props.modalData.description}</Row>
       </Modal.Body>
     </Modal>

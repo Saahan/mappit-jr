@@ -57,7 +57,7 @@ export default function MarkerSearch() {
                   setModalData(item);
                 }}
               >
-                more info...
+                Click for more info...
               </Button>
             </p>
 

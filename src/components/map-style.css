@@ -7,8 +7,15 @@
 }
 
 #markers {
-border-radius: 5px;
-font-weight: bold;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.search-bar {
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .modal-header {
@@ -19,9 +26,9 @@ font-weight: bold;
 .modal-body {
   background-color: rgb(255, 255, 255);
   color: black;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 10px;
+  margin: 15px;
 }
 
 .modal-image {
@@ -30,14 +37,8 @@ font-weight: bold;
 }
 
 .popup-p {
-  margin: 0px !important; 
-  font-size: 1.2rem;
-}
-
-.popup-p-2 {
-  margin: 0px !important; 
+  margin: 0px !important;
   font-size: 1rem;
-  font-style: italic;
 }
 
 .location-button {

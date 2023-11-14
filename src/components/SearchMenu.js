@@ -59,12 +59,8 @@ export default function SearchMenu(props) {
             </option>
           ))}
         </select>
+      <input type="text" placeholder="Search" onChange={passQueryData} className="search-bar"></input>
       </div>
-      <br />
-      <div>
-      <input type="text" placeholder="Search" onChange={passQueryData}></input>
-      </div>
-      <br />
       <div onClick={findLocation} className="location-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"

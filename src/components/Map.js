@@ -23,6 +23,7 @@ export default function Map() {
 }
 
 //Things to do:
-// - Implement marker filters
-// - Explore Search Functionality
+// - Implement marker filters (done)
+// - Explore Search Functionality (done)
 // - Enhance Responsiveness of App (reduce image size, change font size on modals)
+// - Styling Enhancement
