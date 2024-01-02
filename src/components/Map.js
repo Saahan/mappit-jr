@@ -9,13 +9,13 @@ export default function Map() {
       <MapContainer
         center={[43.654145088665525, -79.40799093055035]}
         zoom={11}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         className="map-container"
       >
         <MarkerSearch />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}{r}.png?access-token=iefPC736yFPjmC5yxF4PR0yF7MECRpqOKkDgcXYjskQPBQcXBvS8ZJLhrQZsO0bM"
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
       </MapContainer>
     </div>
@@ -27,3 +27,4 @@ export default function Map() {
 // - Explore Search Functionality (done)
 // - Enhance Responsiveness of App (reduce image size, change font size on modals)
 // - Styling Enhancement
+// - Jawg Tiles url = "https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}{r}.png?access-token=iefPC736yFPjmC5yxF4PR0yF7MECRpqOKkDgcXYjskQPBQcXBvS8ZJLhrQZsO0bM"

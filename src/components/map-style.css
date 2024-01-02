@@ -41,8 +41,28 @@
   font-size: 1rem;
 }
 
-.location-button {
+.button-container {
+  border: 2px solid rgb(168, 166, 166);
+  border-radius: 5px;
+  margin-top: 80px;
+  margin-left: 10px;
+  width: 34px;
+  z-index: 400;
+  position: absolute;
+}
+
+.icon-container {
+  border-bottom: 1px solid lightgrey;
+}
+
+.icon-container:hover {
   cursor: pointer;
-  float: right;
-  margin-top: 20px;
+  background-color: rgb(240, 234, 234);
+}
+
+@media only screen and (max-device-width: 480px) {
+  .search-bar {
+    float: right;
+    margin-bottom: 10px;
+  }
 }
