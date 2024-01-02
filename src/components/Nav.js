@@ -9,7 +9,7 @@ export default function Nav() {
       <Container fluid>
         <Navbar.Brand href="/">
           <img
-            src="/img/Mappit2.png"
+            src="/img/mappit2.png"
             width="200"
             height="70"
             className="d-inline-block align-top"
