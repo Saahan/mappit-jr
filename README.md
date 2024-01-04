@@ -2,6 +2,10 @@
 
 Mappit Jr. is an interactive map made with leaflet and openstreetmap.org map tiles using the ReactJs front-end framework. Custom marker pins, with custom icons, showing points of interest (government facilities in this case) have been added on the map.
 
+The project is hosted live on: https://mappit-jr.onrender.com.
+
+This app is made using ReactJS for UI and React-Leaflet for maps.
+
 ## Features
 
 - An interactive responsive map centered on the city of Toronto, marking down government facilities such as parks, hospitals and universities on the map.
