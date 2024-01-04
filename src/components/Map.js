@@ -5,7 +5,7 @@ import MarkerSearch from "./MarkerSearch";
 
 export default function Map() {
   return (
-    <div className="map-container-div">
+    <div style={{ overflow: "hidden" }}>
       <MapContainer
         center={[43.654145088665525, -79.40799093055035]}
         zoom={11}
